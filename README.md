@@ -1,4 +1,4 @@
-# Javascript-song-player
+
 A web player allows user to edit playlist and it's order.
 
 All songs were downloaded from YouTube Audio Library.(https://www.youtube.com/audiolibrary/music?nv=1)
