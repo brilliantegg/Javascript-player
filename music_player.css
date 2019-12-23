@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
+body {
+    background-color: darkgray;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#outer_mainblock {
+    position: relative;
+}
+
+#mainblock {
+    width: 500px;
+    height: 350px;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    transform: translate(-50%, -0%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#player_main {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+
+span {
+    cursor: pointer;
+    margin: 1px;
+    line-height: 55px;
+    border-radius: 10%;
+    background-color: darkgray;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+
+}
+
+#play_list {
+    border: 1px solid blue;
+    width: 300px;
+}
+
+select {
+    /*border: 1px solid slategray;*/
+    background-color: darkgray;
+    color: white;
+    font-size: 18px;
+}
+
+#playing_box {
+    border: 1px solid transparent;
+    background-color: darkgray;
+    color: white;
+    font-size: 14px;
+    width: 478px;
+    height: 20px;
+    line-height: 18px;
+}
+
+#progress_bar {
+    width: 480px;
+    height: 40px;
+    background-color: darkgray;
+}
+
+#time_track {
+    background-color: brown;
+    height: 40px;
+}
+
+#song_title {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: darkgray;
+}
+
+#rngVolume {
+    -webkit-appearance: none;
+    background-color: darkgray;
+    outline: none;
+    width: 150px;
+    height: 12px;
+}
+
+#rngVolume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    
+    background-color: brown;
+    width: 12px;
+    height: 12px;
+}
+
+#book {
+    margin: auto;
+    margin-top: 10px;
+    width: 480px;
+
+}
+
+#book>div {
+    background-color: white;
+    height: 150px;
+    width: 237px;
+    overflow: auto;
+    float: left;
+}
+#sbook{
+    border-right: 5px solid antiquewhite;
+}
+#sbook>div:hover{
+    background-color: darkgoldenrod;
+}
+#tbook>div:hover{
+    background-color: darkgoldenrod;
+}
+#btn_update_music{
+    clear: both;
+}
+input{
+    background-color: brown;
+    color: white;
+    border: 0px;
+    height: 20px;
+    width: 480px;
+}
+.hidden{
+    display: none;
+}

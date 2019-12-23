@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel=stylesheet type="text/css" href="music_player.css">
+</head>
+
+<body>
+    <div id="outer_mainblock">
+        <div id="mainblock">
+            <div id="player_main">
+                <audio id="audio">
+                    <source id="song" type="audio/mp3">
+                </audio>
+                <p style="color:darkgray"><item id=song_status>&nbsp;</item><br>
+                    <item id="song_title">song_title</item>
+                </p>
+                <div id="progress_bar">
+                    <div id="time_track"></div>
+                </div>
+                <div id="playing_box">
+                    <item id="time_progress">time_progress</item>&nbsp;&nbsp;&nbsp;&nbsp;<item id="loop_status">無循環</item>
+                </div>
+                <span id="play" title="play/pause">&#11208;</span>
+                <span id="stop" title="stop">&#11200;</span>
+                <span id="prev_song" title="previous song">&#11120;</span>
+                <span id="fast_backward" title="fast backward">&#11244;</span>
+                <span id="fast_forward" title="fast forward">&#11246;</span>
+                <span id="next_song" title="next song">&#11122;</span>
+                <span id="loop" title="單曲循環">Loop &#11119;</span>
+                <span id="random_song" title="隨機播放">??</span>
+                <span id="all_loop_song" title="全曲循環">&#8734;</span>
+                <span id="display_list" title="歌本">Edit</span>
+                <br>
+
+                <select id="music_list">
+                    <!--write a function to auto-create option list-->
+                </select>
+                <item id="volume_control">
+                    <label id="rngVolume_label" for="rngVolume"
+                        style="color: darkgray;font-weight: bold">&nbsp;&nbsp;&nbsp;Volume </label>
+                    <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01"
+                        value="1">
+                </item>
+                <div id="book" class="hidden">
+                    <div id="sbook">
+                        <div title="Acoustic_Circles.mp3">Acoustic Circles</div>
+                        <div title="Five_Card_Shuffle.mp3">Five Card Shuffle</div>
+                        <div title="Fortunate_Son.mp3">Fortunate Son</div>
+                        <div title="Front_Porch_Blues.mp3">Front Porch Blues</div>
+                        <div title="Good_Times.mp3">Good Times</div>
+                        <div title="Gypsy_Dance.mp3">Gypsy Dance</div>
+                        <div title="Quarter_Mix.mp3">Quarter Mix</div>
+                        <div title="Sour_Tennessee_Red.mp3">Sour Tennessee Red</div>
+                        <div title="Touch.mp3">Touch</div>
+                    </div>
+                    <div id="tbook"></div>
+<input id="btn_update_list" type="button" value="Update list">
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="music_player.js"></script>
+</body>
+
+</html>
